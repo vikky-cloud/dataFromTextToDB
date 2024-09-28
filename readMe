@@ -1,6 +1,43 @@
-This project helps to extract the data from the MySql database to .txt file format.
+This project helps to import the data from .txt file to MySQL Database.
 
 if you are using MySql database, make sure to import dependencies, the command is:
     pip install mysql-connector-python
 
+Also make sure that your are connected to the database, to perform the operations. to know if you are connected to your database or not, fill the config run these commands:
+
+    import mysql.connector
+
+    config = {
+        'user': 'db_username',
+        'password': 'db_password',
+        'host': 'db_localhost',
+        'port': db_port.no,
+        'database': 'db_name'
+    }
+
+    try:
+        connection = mysql.connector.connect(**config)
+        print("Connection successful!")
+    except mysql.connector.Error as err:
+        print(f"Error: {err}")
+
+
 if you are using databases other than MySQL, please find the import of database connection from google and install their dependencies to run the application.
+
+
+Sample data formart in .txt file
+
+student Data:
+rollno, name, marks, city, grade
+101, anil, 78, Pune, C
+102, bhumika, 93, Mumbai, A
+103, chetan, 85, Mumbai, B
+104, dhruv, 96, Delhi, A
+105, emanuel, 12, Delhi, F
+106, farah, 82, Delhi, B
+
+
+from the above example of txt format, 
+    student Data: refers to the table name
+    rollno, name, marks, city, grade: refers to columns of the table
+    101, anil, 78, Pune, C: refers to rows of the table
