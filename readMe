@@ -1,0 +1,6 @@
+This project helps to extract the data from the MySql database to .txt file format.
+
+if you are using MySql database, make sure to import dependencies, the command is:
+    pip install mysql-connector-python
+
+if you are using databases other than MySQL, please find the import of database connection from google and install their dependencies to run the application.
