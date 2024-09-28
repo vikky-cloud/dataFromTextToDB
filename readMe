@@ -3,7 +3,7 @@ This project helps to import the data from .txt file to MySQL Database.
 if you are using MySql database, make sure to import dependencies, the command is:
     pip install mysql-connector-python
 
-Also make sure that your are connected to the database, to perform the operations. to know if you are connected to your database or not, fill the config run these commands:
+Also make sure that your are connected to the database, to perform the operations. to know if you are connected to your database or not, fill the config run this below code:
 
     import mysql.connector
 
